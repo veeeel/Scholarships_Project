@@ -1,3 +1,4 @@
 Plaan
 * pilte keerata nurga alla
-* 
+* analüüsi: milliste emotsioonide vahel vahet tegemine on mudeli jaoks kõige keerulisem
+* andmete kvaliteedi kontroll
