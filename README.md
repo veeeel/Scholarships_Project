@@ -24,7 +24,6 @@ SCHOLARSHIPS_PROJECT/
 │
 ├── .gitignore                   # Ignore image data
 │
-├── approach2.ipynb              # Must be ran first - cleaning the dataset
 ├── CNN_aug.ipynb                # CNN with data augmentation experiments
 ├── CNN_baseline_and_resnet.ipynb# Shallow CNN + Mini-ResNet experiments
 ├── CNN_og.ipynb                 # Best performing self-built CNN + some analysis and visualization
@@ -35,11 +34,15 @@ SCHOLARSHIPS_PROJECT/
 │
 ├── H4_report.pdf                # Homework 10
 ├── plan.txt                     # Early project planning notes
+├── prep_data.ipynb              # Must be ran first - loading and cleaning the dataset
 └── README.md                    # Project overview and instructions
 ```
 
 ## How to run the code
-
+1. Clone this repository: https://github.com/veeeel/Emotions_project.git
+2. Run the notebook prep_data.ipynb - this loads the dataset from Kaggle into the repository. For this to work, computer must have a unique kaggle.json file downloaded (from here: https://www.kaggle.com/datasets/samithsachidanandan/human-face-emotions/data) and the file must have this path: "C:\Users\youruser\.kaggle\kaggle.json". In this notebook also is performed cleaning of data - we got rid of images that contained full body or multiple people. For this we used a robust method of removing all images exceeding 48x48 size, as that's where the non-uniform images were.
+3. Run any of the model training notebooks.
+4. Run the model_comparison.ipynb notebook.
 
 
 
