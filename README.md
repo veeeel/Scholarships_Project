@@ -39,7 +39,7 @@ SCHOLARSHIPS_PROJECT/
 ```
 
 ## How to run the code
-1. Clone this repository: https://github.com/veeeel/Emotions_project.git
+1. Clone this repository: https://github.com/veeeel/Emotion_Recognition.git
 2. Run the notebook prep_data.ipynb - this loads the dataset from Kaggle into the repository. For this to work, computer must have a unique kaggle.json file downloaded (from here: https://www.kaggle.com/datasets/samithsachidanandan/human-face-emotions/data) and the file must have this path: "C:\Users\youruser\.kaggle\kaggle.json". In this notebook also is performed cleaning of data - we got rid of images that contained full body or multiple people. For this we used a robust method of removing all images exceeding 48x48 size, as that's where the non-uniform images were.
 3. Run any of the model training notebooks. There the trained models and training histories can be saved into folders 'models' and 'training_history' using existing code.
 4. Run the model_comparison.ipynb notebook. For this to work, the training histories of models must be saved in 'training_history' folder.
